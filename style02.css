@@ -1,0 +1,160 @@
+/*  basedo em CSS Grid Layout Module Level 1 de
+    W3C Candidate Recommendation, 21 October 2020 */
+
+body {  background-color: #e67300;);      }
+
+#templos
+  {     display:  grid   ;
+        grid-template-columns:  auto auto auto auto; // 4 colunas iguais
+        grid-template-rows: auto auto auto auto;     // 4 linhas iguais
+        padding:  20px;
+        color:red;
+                          }
+
+.title    { grid-column: 2; grid-row: 1; color: yellow;  }
+.subtitle { grid-column: 2 ;   grid-row: 2; }
+
+.fig01    { grid-column: 1; grid-row: 3;  }
+.fig02    { grid-column: 2; grid-row: 3;  }
+.fig03    { grid-column: 3; grid-row: 3;  }
+.fig04    { grid-column: 4; grid-row: 3;  }
+
+.linkfig01  { grid-column: 1; grid-row: 4; padding-left: 50px; padding-top: 20px;
+              font-size: 120%; width: 100px; text-align: center; }
+.linkfig02  {grid-column: 2; grid-row: 4; padding-left: 50px; padding-top: 20px;
+              font-size: 120%; width: 100px; text-align: center;}
+.linkfig03  {grid-column: 3; grid-row: 4; padding-left: 30px; padding-top: 20px;
+              font-size: 120%; width: 140px; text-align: center;}
+.linkfig04  {grid-column: 4; grid-row: 4; padding-left: 50px; padding-top: 20px;
+              font-size: 120%; width: 100px; text-align: center; }
+
+.tetris
+  {     display:    table-row;
+        flex-direction:   row;
+        background-color: black;
+        padding: 10px 10px;
+        border: 5px solid yellow;    }
+
+.login
+  {     flex-direction:   column;
+        display:   inline-table     ;
+        background-color: #0095f6;
+        color: #ffffff;
+        padding: 1px;
+        border-radius: 4px;
+        font-size: 30px;                  }
+
+.logout
+  {     flex-direction: column;
+        display:   inline-table ;
+        background-color: red;
+        color: #ffffff;
+        padding: 1px;
+        border-radius: 4px;
+        font-size: 30px;
+                         }
+
+
+
+
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 50%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 50%;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .zigurates {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
